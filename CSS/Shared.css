@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+body {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav";
+    grid-gap: 1em;
+    background: linear-gradient(to right, #09203F , #537895);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Kode Mono', monospace;
+    color: #f1f1f1;
+    min-height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navmenu {
+    grid-area: nav;
+    background-color: #f1f1f1;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+.navmenu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.navmenu li {
+    margin: 0 1em;
+    background-color: #f1f1f1;
+    transition:0.3s;
+}
+.navmenu li:hover {
+    background: linear-gradient(45deg, #4684d6 , #b1ddff);
+    color: #f1f1f1;
+    border-radius: 0.5em;
+    padding: 0.4em;
+    transition: 0.3s;
+}
+
+.navmenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+}
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-color: #09203F;
+    color: white;
+    text-align: left;
+    padding-left: 1em;
+}
+footer h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+#email{
+    text-decoration: none;
+    transition: 0.2s;
+    color: #f1f1f1;
+}
+#email:hover{
+    color: blue;
+    transition: 0.2s;
+    font-weight: bold;
+    font-size: larger;
+}
+#email:visited{
+    color: #f1f1f1;
+}
+#linkedinicon{
+    width: 2.5%;
+    height: auto;
+    fill: #f1f1f1;
+    transition: 0.2s;
+}
+#linkedinicon:hover{
+    width: 2.35%;
+    height: auto;
+    transition: 0.2s;
+}
+#githubicon{
+    width: 2.5%;
+    height: auto;
+    fill: #f1f1f1;
+    transition: 0.2s;
+}
+#githubicon:hover{
+    width: 2.35%;
+    height: auto;
+    transition: 0.2s;
+}
+#loginButton{
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: 0.2s;
+}
+#loginButton:hover{
+    color: #537895;
+    transition: 0.2s;
+    font-size: larger;
+}
+#loginButton:visited{
+    color: whitesmoke;
+    background-color: #09203F;
+}

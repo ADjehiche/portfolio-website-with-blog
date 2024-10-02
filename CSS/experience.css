@@ -1,0 +1,128 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 0.1fr 2fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas:
+        "nav nav nav"
+        "experience experience experience"
+        "skills skills skills"
+        "footer footer footer";
+}
+#experience-and-education{
+    display: flex;
+    flex-direction: column;
+    grid-area: experience;
+}
+.education {
+    display: flex;
+    flex-direction: column;
+}
+.education h2, .experience h2{
+    font-size: 4em;
+    font-weight: bold;
+}
+.block{
+    padding: 4em;
+    display:flexbox;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    color: #000;
+    margin: 1em;
+}
+.block a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.block h3{
+    font-size: 1.24em;
+}
+#QMUL:hover{
+    background: linear-gradient(to right, #0000ff, purple);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.7em;
+    transition: 0.3s;
+}
+#Lammas:hover{
+    background: linear-gradient(to right, blue, gold);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.7em;
+    transition: 0.3s;
+
+}
+.experience {
+    grid-area: experience;
+    display: flexbox;
+    padding-right: 1em;
+}
+.skills {
+    grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: white;
+}
+#My, #Top, #SkillsHead {
+    font-size: 4em;
+    background: linear-gradient(135deg, purple, gold);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#My {
+    display: flex;
+    justify-content: start;
+    padding-left: 1em;
+}
+#Top {
+    display: flex;
+    justify-content: start;
+    padding-left: 2em;
+}
+#SkillsHead {
+    display: flex;
+    justify-content: center;
+    padding-right: 1em;
+}
+#skillTitle:hover {
+    cursor: pointer;
+}
+.top3 h2{
+    font-size: 2em;
+}
+.top3 h2:hover {
+    background: linear-gradient(to right, #82b8ff , #b1ddff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+.top3 img{
+    display: inline;
+    padding-right: 1em;
+}
+.third{
+    padding-right: 6em;
+}
+
+@media (max-width: 768px) {
+    .block {
+        padding: 2em;
+        margin: 0.5em;
+    }
+
+    .education h2, .experience h2{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .block h3{
+        font-size: 1.6em;
+    }
+}

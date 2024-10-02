@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas:
+        "nav"
+        "blog"
+        "footer";
+    background-color: black;
+    color: #f1f1f1;
+    min-height: 100vh;
+}
+
+#blogContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.blogPost {
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.blogHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogTitle, .blogDate {
+    flex:1;
+}
+.blogDate{
+    flex-grow: 1;
+    text-align: right;
+    padding-left: 1em;
+}
+
+.blogTitle {
+    font-weight: bold;
+    font-size:1.5em ;
+}
+
+.blogContent {
+    padding-top: 20px;
+}
+#editBlog, #return{
+    text-decoration: none;
+    color: aqua;
+    transition: 0.2s;
+}
+#editBlog:hover, #previewPost:hover, #return:hover{
+    transition: 0.2s;
+    color:white;
+    font-size: larger;
+}
+#previewPost{
+    transition: 0.2s;
+    background: none;
+    color: blue;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+#title-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#title-container h1{
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Kode Mono', monospace;
+}
+#title-container #monthSelection, input{
+    font-size: large;
+    font-family: 'Kode Mono', monospace;
+    border: #ccc;
+    border-radius: 15%;
+}
+@media screen and (max-width:768px) {
+    #title-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #title-container h1{
+        font-size: 2em;
+    }
+    
+}

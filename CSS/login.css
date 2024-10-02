@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "nav"
+        "login"
+        "footer";
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Kode Mono', monospace;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.login {
+    grid-area: login;
+}
+
+.login h2 {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+    padding: 15.4em 2em;
+}
+
+.login input {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-areas:
+            "nav nav nav"
+            ". login ."
+            "footer footer footer";
+    }
+
+    .login form {
+        padding: 10em 2em;
+    }
+}
+

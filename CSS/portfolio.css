@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "nav nav nav"
+        "top top top"
+        "footer footer footer";
+    color: #f1f1f1;
+}
+#project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: top;
+}
+#top{
+    font-family: 'Whisper', sans-serif;
+    font-size: 1.5em;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.5em;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 1em 1em 2em 1em;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.project h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.project p{
+    padding: 8em 1em;
+}
